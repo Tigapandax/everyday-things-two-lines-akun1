@@ -1,0 +1,2 @@
+A toaster is a little elevator for bread that lowers two slices down past glowing hot wires until they turn golden brown, then pops them back up when they are ready to eat.
+The elevator picture works because it maps the bread going down, heating up, and popping back up, but it leaves out that no one is riding inside and that the heat comes from the wires, not from the ride itself.
