@@ -26,6 +26,9 @@ for (const [i, line] of lines.entries()) {
 }
 if (lines.length === 2 && lines[0].split(/\s+/).length < 3) failures.push("line 1 too short to explain anything");
 if (lines.length === 2 && lines[1].split(/\s+/).length < 3) failures.push("line 2 too short to explain the analogy");
+if (lines.length === 2 && lines[0] === lines[1]) failures.push("the two lines must differ, not repeat each other");
+if (lines.length === 2 && !/maps/i.test(lines[1])) failures.push("line 2 must name what the analogy maps");
+if (lines.length === 2 && !/leaves out/i.test(lines[1])) failures.push("line 2 must name what the analogy leaves out");
 
 if (failures.length > 0) {
   for (const failure of failures) console.error(`FAIL: ${failure}`);
